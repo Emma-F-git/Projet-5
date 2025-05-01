@@ -1,16 +1,29 @@
 .banner {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1240px;
   height: 223px;
-  border: 1px;
+  border-radius: 1em;
   background-size: cover;
   background-position: center;
-  text-align: center;
   color: white;
-  filter: drop-shadow(0 0 0.75rem #00000040);
-  filter: brightness(50%);
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
 }
 
 .banner h1 {
   font-size: 2rem;
-  margin-top: 20px;
+  margin: 0;
+  z-index: 1;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
