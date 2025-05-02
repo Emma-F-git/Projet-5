@@ -2,7 +2,7 @@ import Banner from "../components/ui/Banner";
 import Card from "../components/ui/Card";
 import data from "../data/HousingData.json";
 
-const Home = () => {
+function Home() {
   return (
     <div>
       <Banner
@@ -21,6 +21,6 @@ const Home = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Home;

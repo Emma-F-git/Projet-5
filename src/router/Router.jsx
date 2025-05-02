@@ -6,7 +6,7 @@ import NotFound from "../pages/NotFound";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 
-const Router = () => {
+function Router() {
   return (
     <BrowserRouter>
       <Header />
@@ -19,6 +19,6 @@ const Router = () => {
       <Footer />
     </BrowserRouter>
   );
-};
+}
 
 export default Router;

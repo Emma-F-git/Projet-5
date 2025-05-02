@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-const HousingDetail = () => {
+function HousingDetail() {
   const { id } = useParams();
 
   return (
@@ -9,6 +9,6 @@ const HousingDetail = () => {
       <p>ID du logement : {id}</p>
     </div>
   );
-};
+}
 
 export default HousingDetail;
