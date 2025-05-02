@@ -9,3 +9,5 @@ function Card({ id, title, cover }) {
     </Link>
   );
 }
+
+export default Card;

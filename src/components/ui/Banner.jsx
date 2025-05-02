@@ -7,3 +7,5 @@ function Banner({ image, text }) {
     </div>
   );
 }
+
+export default Banner;
