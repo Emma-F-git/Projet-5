@@ -5,6 +5,7 @@ import HousingDetail from "../pages/HousingDetail";
 import NotFound from "../pages/NotFound";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
+import Collapse from "../components/ui/Collapse";
 
 function Router() {
   return (

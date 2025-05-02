@@ -1,5 +1,13 @@
+import React from "react";
+import Collapse from "../components/ui/Collapse";
+
 function About() {
-  return <h1>À propos</h1>;
+  return (
+    <div className="about">
+      <Collapse title="Description"></Collapse>
+      <Collapse title="Equipements"></Collapse>
+    </div>
+  );
 }
 
 export default About;
