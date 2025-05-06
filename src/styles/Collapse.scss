@@ -1,10 +1,13 @@
 .collapse {
-  border: 1px solid #ddd;
   margin: 1rem 0;
   border-radius: 5px;
   overflow: hidden;
+  max-width: 80%;
+  width: 100%;
+  text-align: left;
   .collapse-header {
-    background: #ff6060;
+    background-color: #ff6060;
+    width: 100%;
     color: white;
     padding: 1rem;
     cursor: pointer;
@@ -26,11 +29,23 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.4s ease;
+    padding-left: 1rem;
+    padding-right: 1rem;
     &.open {
       max-height: 500px;
       background-color: #f6f6f6;
-      padding-left: 1rem;
-      padding-right: 1rem;
     }
+  }
+}
+.collapse-header {
+  outline: none;
+
+  &:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 2px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
   }
 }
