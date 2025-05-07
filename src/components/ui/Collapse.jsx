@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/Collapse.scss";
 import "../../index.css";
+import arrowIcon from "../../assets/vector.svg";
 
 function Collapse({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,11 @@ function Collapse({ title, children }) {
         aria-controls="collapse-content"
       >
         <h3>{title}</h3>
-        <span className={`arrow ${isOpen ? "open" : ""}`}>▼</span>
+        <img
+          src={arrowIcon}
+          alt="flèche dépliante"
+          className={`arrow ${isOpen ? "open" : ""}`}
+        />
       </button>
       <div
         id="collapse-content"
