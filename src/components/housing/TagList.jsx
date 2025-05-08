@@ -1,10 +1,12 @@
+import "../../styles/TagList.scss";
+
 function TagList({ tags }) {
   return (
     <div className="tags">
       {tags.map((tag) => (
-        <span key={tag} className="tag">
+        <button key={tag} className="tag">
           {tag}
-        </span>
+        </button>
       ))}
     </div>
   );

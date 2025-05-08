@@ -15,16 +15,16 @@ function HousingDetail() {
   return (
     <div>
       <SlideShow pictures={logement.pictures} />
+      <section>
+        <h1>{logement.title}</h1>
 
-      <h1>{logement.title}</h1>
+        <TagList tags={logement.tags} />
 
-      <TagList tags={logement.tags} />
-
-      <div className="hostRating">
-        <HostCard host={logement.host} />
-        <RatingStars rating={logement.rating} />
-      </div>
-
+        <div className="hostRating">
+          <HostCard host={logement.host} />
+          <RatingStars rating={logement.rating} />
+        </div>
+      </section>
       <div id="collapseHousingDetail">
         <Collapse title="Description">{logement.description}</Collapse>
         <Collapse title="Équipements">
