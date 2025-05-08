@@ -1,0 +1,15 @@
+.host-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: right;
+  .host-name {
+    font-weight: bold;
+  }
+  .host-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
