@@ -2,6 +2,9 @@ import { useParams } from "react-router-dom";
 import SlideShow from "../components/layout/SlideShow";
 import data from "../data/HousingData.json";
 import Collapse from "../components/ui/Collapse";
+import TagList from "../components/housing/TagList";
+import HostCard from "../components/housing/HostCard";
+import RatingStars from "../components/housing/RatingStars";
 
 function HousingDetail() {
   const { id } = useParams();
@@ -12,17 +15,26 @@ function HousingDetail() {
   return (
     <div>
       <SlideShow pictures={logement.pictures} />
-      <h1>{logement.title}</h1>
-      <Collapse title="Description">{logement.description}</Collapse>
 
-      <Collapse title="Équipements">
-        <ul>
-          {logement.equipments.map((equipement, index) => (
-            <li key={index}>{equipement}</li>
-          ))}
-        </ul>
-      </Collapse>
-      {/*A ajouter ville, host, rating... */}
+      <h1>{logement.title}</h1>
+
+      <TagList tags={logement.tags} />
+
+      <div className="hostRating">
+        <HostCard host={logement.host} />
+        <RatingStars rating={logement.rating} />
+      </div>
+
+      <div id="collapseHousingDetail">
+        <Collapse title="Description">{logement.description}</Collapse>
+        <Collapse title="Équipements">
+          <ul>
+            {logement.equipments.map((equipement, index) => (
+              <li key={`${equipement}-${index}`}>{equipement}</li>
+            ))}
+          </ul>
+        </Collapse>
+      </div>
     </div>
   );
 }

@@ -29,7 +29,7 @@ function Collapse({ title, children }) {
         id="collapse-content"
         className={`collapse-content ${isOpen ? "open" : ""}`}
       >
-        <p>{children}</p>
+        {children}
       </div>
     </div>
   );
