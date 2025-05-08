@@ -5,6 +5,7 @@ import Collapse from "../components/ui/Collapse";
 import TagList from "../components/housing/TagList";
 import HostCard from "../components/housing/HostCard";
 import RatingStars from "../components/housing/RatingStars";
+import "../styles/HousingDetail.scss";
 
 function HousingDetail() {
   const { id } = useParams();
@@ -16,7 +17,10 @@ function HousingDetail() {
     <div>
       <SlideShow pictures={logement.pictures} />
       <section>
-        <h1 id="title-logement">{logement.title}</h1>
+        <div className="title-location">
+          <h1 id="title-logement">{logement.title}</h1>
+          <p className="location">{logement.location}</p>
+        </div>
 
         <TagList tags={logement.tags} />
 

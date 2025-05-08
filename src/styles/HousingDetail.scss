@@ -1,3 +1,11 @@
-h1 {
-  align-items: left;
+#title-logement {
+  display: flex;
+  font-weight: normal;
+  color: #ff6060;
+  font-size: 36px;
+}
+
+.location {
+  display: flex;
+  font-size: 18px;
 }

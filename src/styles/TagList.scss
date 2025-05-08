@@ -1,4 +1,13 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
 .tag {
   background-color: #ff6060;
   color: white;
+  border-radius: 10px;
+  font-size: 14px;
 }
