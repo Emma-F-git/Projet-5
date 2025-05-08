@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import SlideShow from "../components/layout/SlideShow";
+import SlideShow from "../components/ui/SlideShow";
 import data from "../data/HousingData.json";
 import Collapse from "../components/ui/Collapse";
 import TagList from "../components/housing/TagList";
