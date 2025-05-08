@@ -1,3 +1,5 @@
+import "../../styles/RatingStars.scss";
+
 function RatingStars({ rating }) {
   const totalStars = 5;
   const filledStars = parseInt(rating);

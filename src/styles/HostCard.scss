@@ -1,15 +1,15 @@
-.host-card {
+.host {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  text-align: right;
-  .host-name {
-    font-weight: bold;
-  }
+  justify-content: end;
   .host-picture {
-    width: 64px;
-    height: 64px;
     border-radius: 50%;
-    object-fit: cover;
+    width: 64px;
+  }
+  .host-name {
+    color: #ff6060;
+    font-size: 18px;
+    display: flex;
+    font-weight: bold;
+    flex-wrap: wrap;
   }
 }

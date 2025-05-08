@@ -16,7 +16,7 @@ function HousingDetail() {
     <div>
       <SlideShow pictures={logement.pictures} />
       <section>
-        <h1>{logement.title}</h1>
+        <h1 id="title-logement">{logement.title}</h1>
 
         <TagList tags={logement.tags} />
 
