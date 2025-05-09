@@ -5,13 +5,16 @@ import Collapse from "../components/ui/Collapse";
 import TagList from "../components/housing/TagList";
 import HostCard from "../components/housing/HostCard";
 import RatingStars from "../components/housing/RatingStars";
+import NotFound from "./NotFound";
 import "../styles/HousingDetail.scss";
 
 function HousingDetail() {
   const { id } = useParams();
   const logement = data.find((item) => item.id === id);
 
-  if (!logement) return <p>Logement introuvable.</p>;
+  if (!logement) {
+    return <NotFound />;
+  }
 
   return (
     <div>
