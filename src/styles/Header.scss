@@ -19,3 +19,14 @@ nav a {
   color: black;
   margin-left: 3rem;
 }
+
+@media (max-width: 768px) {
+  nav img {
+    width: 145px;
+  }
+  nav a {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 1rem;
+  }
+}

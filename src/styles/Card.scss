@@ -33,3 +33,10 @@
   text-align: left;
   font-family: Montserrat, sans-serif;
 }
+
+@media (max-width: 768px) {
+  .card-list {
+    grid-template-columns: 1fr;
+    background-color: white;
+  }
+}

@@ -16,3 +16,15 @@
   display: inline-block;
   margin: 4rem 0;
 }
+
+@media (max-width: 768px) {
+  #notFound {
+    font-size: 96px;
+  }
+  #notFoundMessage {
+    font-size: 18px;
+  }
+  #linkNotFound {
+    font-size: 14px;
+  }
+}
