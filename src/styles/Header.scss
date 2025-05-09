@@ -14,10 +14,16 @@ nav img {
   height: auto;
 }
 
-nav a {
+.nav-link {
+  text-decoration: none;
   font-size: 24px;
   color: black;
   margin-left: 3rem;
+  font-weight: normal;
+
+  &.active {
+    border-bottom: 2px solid black;
+  }
 }
 
 @media (max-width: 768px) {
