@@ -21,6 +21,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 24px;
     h3 {
       margin: 0;
     }
@@ -36,11 +37,13 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.4s ease;
-    padding-left: 1rem;
-    padding-right: 1rem;
     &.open {
-      max-height: 500px;
+      max-height: 1000px;
       background-color: #f6f6f6;
+    }
+    .collapse-inner {
+      padding: 1rem;
+      font-size: 20px;
     }
   }
 }
