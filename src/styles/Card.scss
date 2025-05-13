@@ -1,6 +1,7 @@
 .card {
-  width: 300px;
-  margin: 10px;
+  width: 100%;
+  max-width: 340px;
+  height: 340px;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -12,7 +13,7 @@
   grid-template-columns: repeat(3, 1fr);
   background-color: #f6f6f6;
   border-radius: 25px;
-  padding: 2em;
+  padding: 1em;
   margin-top: 2em;
   margin-bottom: 2em;
   justify-items: center;
@@ -23,8 +24,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: blur(1px);
-  transform: scale(1.1);
+  border-radius: 10px;
 }
 
 .card h2 {
@@ -33,16 +33,23 @@
   left: 0;
   right: 0;
   margin: 0;
-  padding: 1rem;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  padding: 3em;
   font-size: 18px;
   font-family: sans-serif;
   text-align: left;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
   .card-list {
     grid-template-columns: 1fr;
     background-color: white;
+  }
+  .card img {
+    width: 335px;
+    height: 255px;
+  }
+  .card h2 {
+    margin: 3em;
   }
 }
