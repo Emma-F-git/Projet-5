@@ -1,11 +1,39 @@
 #title-logement {
   display: flex;
-  font-weight: normal;
   color: #ff6060;
   font-size: 36px;
+  margin-bottom: 0;
+}
+
+.title-host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 143%;
 }
 
 .location {
   display: flex;
   font-size: 18px;
+}
+
+.tags-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+  .title-host,
+  .tags-rating {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .host {
+    align-self: flex-end;
+  }
 }

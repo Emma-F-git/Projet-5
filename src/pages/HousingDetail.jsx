@@ -24,16 +24,17 @@ function HousingDetail() {
     <div>
       <SlideShow pictures={logement.pictures} />
       <section>
-        <div className="title-location">
-          <h1 id="title-logement">{logement.title}</h1>
+        <div className="housing-header">
+          <div className="title-host">
+            <h1 id="title-logement">{logement.title}</h1>
+            <HostCard host={logement.host} />
+          </div>
           <p className="location">
             {city}, {region}
           </p>
         </div>
-        <TagList tags={logement.tags} />
-
-        <div className="hostRating">
-          <HostCard host={logement.host} />
+        <div className="tags-rating">
+          <TagList tags={logement.tags} />
           <RatingStars rating={logement.rating} />
         </div>
       </section>
