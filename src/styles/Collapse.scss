@@ -51,6 +51,7 @@
     .collapse-inner {
       padding: 1rem;
       font-size: 20px;
+      font-weight: normal;
     }
 
     ul {
@@ -106,5 +107,6 @@
   }
   #collapseHousingDetail {
     flex-direction: column;
+    gap: 0;
   }
 }

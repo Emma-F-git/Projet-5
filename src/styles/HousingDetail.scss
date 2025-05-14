@@ -3,6 +3,8 @@
   color: #ff6060;
   font-size: 36px;
   margin-bottom: 0;
+  text-align: left;
+  font-weight: 500;
 }
 
 .title-host {
@@ -11,6 +13,7 @@
   align-items: center;
   flex-wrap: wrap;
   line-height: 143%;
+  padding-top: 2em;
 }
 
 .location {
@@ -27,13 +30,19 @@
 }
 
 @media (max-width: 768px) {
-  .title-host,
-  .tags-rating {
-    flex-direction: column;
-    align-items: flex-start;
+  #title-logement {
+    font-size: 18px;
+  }
+  .location {
+    font-size: 14px;
+  }
+  .rating-host {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .host {
-    align-self: flex-end;
+  .title-location {
+    text-align: left;
   }
 }
