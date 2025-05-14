@@ -11,6 +11,10 @@ import "../styles/HousingDetail.scss";
 function HousingDetail() {
   const { id } = useParams();
   const logement = data.find((item) => item.id === id);
+  const locationParts = logement.location.split(" - ");
+  const region = locationParts[0];
+  let city = locationParts[1];
+  city = city.replace(/\s*\d+[a-zA-Z]*$/, "").trim();
 
   if (!logement) {
     return <NotFound />;
@@ -22,9 +26,10 @@ function HousingDetail() {
       <section>
         <div className="title-location">
           <h1 id="title-logement">{logement.title}</h1>
-          <p className="location">{logement.location}</p>
+          <p className="location">
+            {city}, {region}
+          </p>
         </div>
-
         <TagList tags={logement.tags} />
 
         <div className="hostRating">

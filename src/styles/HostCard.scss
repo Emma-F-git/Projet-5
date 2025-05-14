@@ -1,6 +1,7 @@
 .host {
   display: flex;
   justify-content: end;
+  align-items: center;
   .host-picture {
     border-radius: 50%;
     width: 64px;
@@ -8,6 +9,10 @@
   .host-name {
     color: #ff6060;
     font-size: 18px;
-    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
   }
 }
