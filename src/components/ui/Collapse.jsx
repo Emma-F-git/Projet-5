@@ -3,7 +3,7 @@ import "../../styles/Collapse.scss";
 import "../../index.css";
 import arrowIcon from "../../assets/vector.svg";
 
-function Collapse({ title, children }) {
+function Collapse({ title, children, variant = "default", className = "" }) {
   const [isOpen, setIsOpen] = useState(false);
 
   function handleToggle() {
@@ -11,7 +11,7 @@ function Collapse({ title, children }) {
   }
 
   return (
-    <div className="collapse">
+    <div className={`collapse ${variant} ${className}`}>
       <button
         className="collapse-header"
         onClick={handleToggle}

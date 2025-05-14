@@ -33,8 +33,10 @@ function HousingDetail() {
         </div>
       </section>
       <div id="collapseHousingDetail">
-        <Collapse title="Description">{logement.description}</Collapse>
-        <Collapse title="Équipements">
+        <Collapse title="Description" variant="housing">
+          {logement.description}
+        </Collapse>
+        <Collapse title="Équipements" variant="housing">
           <ul>
             {logement.equipments.map((equipement, index) => (
               <li key={`${equipement}-${index}`}>{equipement}</li>
