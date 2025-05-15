@@ -95,14 +95,17 @@
 
 /*Media Queries*/
 @media (max-width: 768px) {
-  .collapse-header {
-    font-size: 13px;
-  }
-  .collapse-content .collapse-inner {
-    font-size: 12px;
-  }
   .collapse {
     min-width: 100%;
+    .arrow {
+      width: 16px;
+    }
+    h2 {
+      font-size: 13px;
+    }
+    .collapse-content .collapse-inner {
+      font-size: 12px;
+    }
   }
   #collapseHousingDetail {
     flex-direction: column;

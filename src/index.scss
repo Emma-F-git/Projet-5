@@ -69,14 +69,6 @@ button {
   align-items: center;
 }
 
-@mixin respond-to($breakpoint) {
-  @if $breakpoint == mobile {
-    @media (max-width: 768px) {
-      @content;
-    }
-  }
-}
-
 /*Medias*/
 @media (max-width: 768px) {
   p {
