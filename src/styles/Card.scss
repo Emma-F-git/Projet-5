@@ -7,6 +7,7 @@
   position: relative;
   text-decoration: none;
   padding: 2em;
+  margin: 0 auto;
 }
 
 .card-list {
@@ -14,7 +15,7 @@
   grid-template-columns: repeat(3, 1fr);
   background-color: #f6f6f6;
   border-radius: 25px;
-  padding: 1em;
+  padding: 2em;
   margin-top: 2em;
   margin-bottom: 2em;
   justify-items: center;
@@ -41,6 +42,21 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #f6f6f6;
+    padding: 1.5em;
+  }
+  .card {
+    padding: 1em;
+    margin-bottom: 2em;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
 @media (max-width: 768px) {
   .card-list {
     grid-template-columns: 1fr;
@@ -51,16 +67,15 @@
   .card {
     padding: 0;
     max-height: 255px;
-  }
-  .card img {
-    width: 335px;
-
-    height: 100%;
-  }
-  .card h2 {
-    color: white;
-    padding: 0;
-    left: 1em;
-    bottom: 1em;
+    .img {
+      width: 335px;
+      height: 100%;
+    }
+    .h2 {
+      color: white;
+      padding: 0;
+      left: 1em;
+      bottom: 1em;
+    }
   }
 }
