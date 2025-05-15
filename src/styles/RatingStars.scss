@@ -1,7 +1,8 @@
 @use "../index.scss" as *;
 
 .rating {
-  @include flex-center;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .star {
@@ -11,5 +12,15 @@
   margin-right: 12px;
   &.filled {
     color: $main-background-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .tags-rating {
+    flex-direction: column;
+    align-items: normal;
+  }
+  .star {
+    font-size: 18px;
   }
 }

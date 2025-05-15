@@ -45,12 +45,22 @@
   .card-list {
     grid-template-columns: 1fr;
     background-color: white;
+    gap: 1em;
+    padding: 0.5em;
+  }
+  .card {
+    padding: 0;
+    max-height: 255px;
   }
   .card img {
     width: 335px;
-    height: 255px;
+
+    height: 100%;
   }
   .card h2 {
-    margin: 3em;
+    color: white;
+    padding: 0;
+    left: 1em;
+    bottom: 1em;
   }
 }

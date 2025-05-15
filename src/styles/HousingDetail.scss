@@ -1,10 +1,9 @@
 @use "../index.scss" as *;
 
 #title-logement {
-  display: flex;
   color: $main-background-color;
   font-size: 36px;
-  margin-bottom: 0;
+  margin: 0;
   text-align: left;
   font-weight: 500;
 }
@@ -13,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   flex-wrap: wrap;
   line-height: 143%;
   padding-top: 2em;
@@ -22,6 +22,8 @@
   display: flex;
   font-size: 18px;
   color: black;
+  margin-top: 0.2em;
+  margin-bottom: 0.6em;
 }
 
 .tags-rating {
@@ -39,12 +41,14 @@
   .location {
     font-size: 14px;
   }
-  .rating-host {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+  .rating {
+    padding-top: 1em;
+    .host {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
-
   .title-location {
     text-align: left;
   }

@@ -7,6 +7,7 @@
   .host-picture {
     border-radius: 50%;
     width: 64px;
+    margin-right: 0.6em;
   }
   .host-name {
     @include flex-center;

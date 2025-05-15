@@ -1,3 +1,5 @@
+@use "../index.scss" as *;
+
 .slideshow {
   position: relative;
   width: 100%;
@@ -44,5 +46,18 @@
     font-size: 1rem;
     padding: 1rem 0.5rem;
     border-radius: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slideshow {
+    height: 255px;
+    .slideshow-image {
+      height: 100%;
+    }
+    .nav img {
+      width: 12px;
+      height: 20px;
+    }
   }
 }
