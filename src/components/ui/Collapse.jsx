@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../../styles/Collapse.scss";
-import "../../index.css";
 import arrowIcon from "../../assets/vector.svg";
 
 function Collapse({ title, children, variant = "default", className = "" }) {
