@@ -1,11 +1,11 @@
+@import "../index.scss";
+
 footer {
+  @include flex-center;
   background-color: black;
   color: white;
-  justify-content: center;
-  align-items: center;
   padding: 2em;
   font-size: 24px;
-  display: flex;
   flex-direction: column;
 }
 

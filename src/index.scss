@@ -1,7 +1,12 @@
+/*Font*/
 $font-stack: "Montserrat", system-ui, Avenir, Helvetica, Arial, sans-serif;
+$font-weight: 500;
+
+/*Colors*/
 $text-color-dark: rgba(255, 255, 255, 0.87);
 $text-color-light: #213547;
 $link-color: #ffffff;
+$main-background-color: #ff6060;
 $button-bg-dark: #1a1a1a;
 $button-bg-light: #f9f9f9;
 
@@ -9,10 +14,8 @@ $button-bg-light: #f9f9f9;
   font-family: $font-stack;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: $text-color-dark;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -57,6 +60,22 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/*Mixin*/
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+}
+
+/*Medias*/
 @media (prefers-color-scheme: light) {
   :root {
     color: $text-color-light;

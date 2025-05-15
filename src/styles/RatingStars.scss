@@ -1,7 +1,7 @@
+@import "../index.scss";
+
 .rating {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
 }
 
 .star {
@@ -11,6 +11,6 @@
   margin-right: 12px;
 
   &.filled {
-    color: #ff6060;
+    color: $main-background-color;
   }
 }

@@ -1,6 +1,8 @@
+@import "../index.scss";
+
 #title-logement {
   display: flex;
-  color: #ff6060;
+  color: $main-background-color;
   font-size: 36px;
   margin-bottom: 0;
   text-align: left;

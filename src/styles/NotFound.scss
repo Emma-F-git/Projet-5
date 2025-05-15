@@ -1,12 +1,14 @@
+@import "../index.scss";
+
 #notFound {
   font-size: 288px;
-  color: #ff6060;
+  color: $main-background-color;
   margin: 0;
 }
 
 #notFoundMessage {
   font-size: 36px;
-  color: #ff6060;
+  color: $main-background-color;
   font-weight: normal;
 }
 
