@@ -11,14 +11,15 @@ import "../styles/HousingDetail.scss";
 function HousingDetail() {
   const { id } = useParams();
   const logement = data.find((item) => item.id === id);
-  const locationParts = logement.location.split(" - ");
-  const region = locationParts[0];
-  let city = locationParts[1];
-  city = city.replace(/\s*\d+[a-zA-Z]*$/, "").trim();
 
   if (!logement) {
     return <NotFound />;
   }
+
+  const locationParts = logement.location.split(" - ");
+  const region = locationParts[0];
+  let city = locationParts[1];
+  city = city.replace(/\s*\d+[a-zA-Z]*$/, "").trim();
 
   return (
     <div>
