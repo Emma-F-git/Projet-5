@@ -1,12 +1,21 @@
-# React + Vite
+Formation Développeur web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+P5 - Kasa - formation Developpeur Web Openclassrooms
 
-Currently, two official plugins are available:
+Kasa est une entreprise française spécialisée dans la location d’appartements entre particuliers. Afin de moderniser sa plateforme, un grand projet de refonte a été lancé. L’ancienne application, développée en ASP.NET, laisse place à une stack JavaScript moderne : React pour le front-end et, prochainement, Node.js pour le back-end.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ce projet a pour but de développer toute l’interface utilisateur de la nouvelle version du site Kasa à partir de maquettes Figma responsives. La mission comprend :
 
-## Expanding the ESLint configuration
+- Création des composants React
+- Mise en place de la navigation avec React Router
+- Intégration des données via un fichier JSON
+- Application d’animations et d’interactions selon les spécifications
+- Respect des guidelines techniques de l'entreprise
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Technologies utilisées :
+
+- React et utilisation de vite
+- React Router
+- Sass / Scss
+- Figma (design UI/UX)
+- Animations CSS (pour les composants interactifs comme Collapse)

@@ -1,4 +1,4 @@
-@import "../index.scss";
+@use "../index.scss" as *;
 
 .tags {
   display: flex;
@@ -9,7 +9,6 @@
 
 .tag {
   background-color: $main-background-color;
-  color: white;
   border-radius: 10px;
   font-size: 14px;
   min-width: 115px;

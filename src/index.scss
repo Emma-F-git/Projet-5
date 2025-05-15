@@ -3,8 +3,6 @@ $font-stack: "Montserrat", system-ui, Avenir, Helvetica, Arial, sans-serif;
 $font-weight: 500;
 
 /*Colors*/
-$text-color-dark: rgba(255, 255, 255, 0.87);
-$text-color-light: #213547;
 $link-color: #ffffff;
 $main-background-color: #ff6060;
 $button-bg-dark: #1a1a1a;
@@ -13,9 +11,9 @@ $button-bg-light: #f9f9f9;
 :root {
   font-family: $font-stack;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: $font-weight;
   color-scheme: light dark;
-  color: $text-color-dark;
+  color: white;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -27,7 +25,7 @@ $button-bg-light: #f9f9f9;
 }
 
 a {
-  font-weight: 500;
+  font-weight: $font-weight;
   color: $link-color;
   text-decoration: inherit;
 }
@@ -39,7 +37,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   justify-content: center;
-  font-weight: 500;
+  font-weight: $font-weight;
 }
 
 h1 {
@@ -47,17 +45,21 @@ h1 {
   line-height: 1.1;
 }
 
+h2 {
+  font-size: 24px;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: $font-weight;
+  color: white;
   cursor: pointer;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
 }
 
 /*Mixin*/
@@ -76,12 +78,6 @@ button:focus-visible {
 }
 
 /*Medias*/
-@media (prefers-color-scheme: light) {
-  :root {
-    color: $text-color-light;
-  }
-}
-
 @media (max-width: 768px) {
   p {
     font-size: 12px;

@@ -17,7 +17,7 @@ function Collapse({ title, children, variant = "default", className = "" }) {
         aria-expanded={isOpen}
         aria-controls="collapse-content"
       >
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <img
           src={arrowIcon}
           alt="flèche dépliante"

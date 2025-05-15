@@ -1,9 +1,8 @@
-@import "../index.scss";
+@use "../index.scss" as *;
 
 footer {
   @include flex-center;
   background-color: black;
-  color: white;
   padding: 2em;
   font-size: 24px;
   flex-direction: column;

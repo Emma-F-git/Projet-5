@@ -1,4 +1,4 @@
-@import "../index.scss";
+@use "../index.scss" as *;
 
 #title-logement {
   display: flex;
@@ -21,6 +21,7 @@
 .location {
   display: flex;
   font-size: 18px;
+  color: black;
 }
 
 .tags-rating {

@@ -29,9 +29,9 @@ function HousingDetail() {
             <h1 id="title-logement">{logement.title}</h1>
             <HostCard host={logement.host} />
           </div>
-          <p className="location">
+          <div className="location">
             {city}, {region}
-          </p>
+          </div>
         </div>
         <div className="tags-rating">
           <TagList tags={logement.tags} />
