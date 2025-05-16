@@ -21,14 +21,11 @@
     cursor: pointer;
     font-size: 24px;
     background-color: $main-background-color;
-
     h2 {
       margin: 0;
     }
-
     .arrow {
       transition: transform 0.3s ease;
-
       &.open {
         transform: rotate(180deg);
       }
@@ -40,18 +37,15 @@
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.4s ease;
     color: black;
-
     &.open {
       max-height: 1000px;
       background-color: #f6f6f6;
     }
-
     .collapse-inner {
       padding: 1rem;
       font-size: 20px;
       font-weight: normal;
     }
-
     ul {
       list-style: none;
       padding-left: 0;

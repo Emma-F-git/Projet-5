@@ -1,4 +1,3 @@
-import React from "react";
 import Collapse from "../components/ui/Collapse";
 import "../styles/Header.scss";
 import "../styles/Banner.scss";
