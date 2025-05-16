@@ -31,16 +31,18 @@
 
 .card h2 {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 3rem;
+  left: 3rem;
   margin: 0;
-  padding: 3em;
+  padding: 1rem 1.5rem;
+  max-width: 70%;
   font-size: 18px;
   font-family: sans-serif;
   text-align: left;
   box-sizing: border-box;
-  backdrop-filter: blur(1px);
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  border-radius: 4px;
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
@@ -72,10 +74,11 @@
       width: 335px;
       height: 100%;
     }
-    .h2 {
-      color: white;
-      left: 1em;
-      bottom: 1em;
+    h2 {
+      bottom: 1rem;
+      left: 1rem;
+      padding: 0.5rem 1rem;
+      font-size: 14px;
     }
   }
 }

@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import "../../styles/RatingStars.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
@@ -19,9 +18,5 @@ function RatingStars({ rating }) {
     </div>
   );
 }
-
-RatingStars.propTypes = {
-  rating: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-};
 
 export default RatingStars;
