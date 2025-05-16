@@ -9,10 +9,7 @@
 }
 
 .title-host {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
+  @include flex-space-between;
   flex-wrap: wrap;
   line-height: 143%;
   padding-top: 2em;
@@ -27,9 +24,7 @@
 }
 
 .tags-rating {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-space-between;
   flex-wrap: wrap;
   padding-bottom: 1em;
 }

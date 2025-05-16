@@ -16,9 +16,9 @@
 }
 
 @media (max-width: 768px) {
-  .tags-rating {
-    flex-direction: column;
-    align-items: normal;
+  .rating {
+    justify-content: flex-start;
+    width: 100%;
   }
   .star {
     font-size: 18px;

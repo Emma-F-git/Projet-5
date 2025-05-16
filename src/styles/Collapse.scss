@@ -15,8 +15,7 @@
   text-align: left;
 
   .collapse-header {
-    @include flex-center;
-    justify-content: space-between;
+    @include flex-space-between;
     width: 100%;
     padding: 1rem;
     cursor: pointer;

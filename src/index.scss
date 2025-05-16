@@ -68,6 +68,12 @@ button {
   justify-content: center;
   align-items: center;
 }
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
 
 /*Medias*/
 @media (max-width: 768px) {
