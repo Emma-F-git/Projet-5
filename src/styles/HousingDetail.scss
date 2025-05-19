@@ -1,5 +1,22 @@
 @use "../index.scss" as *;
 
+.housing-header {
+  display: flex;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.info-logement {
+  width: 60%;
+}
+
+.rating-host {
+  align-items: flex-end;
+  flex-direction: column;
+  margin-bottom: 0;
+  width: 40%;
+}
+
 #title-logement {
   color: $main-background-color;
   font-size: 36px;
@@ -30,21 +47,28 @@
 }
 
 @media (max-width: 768px) {
+  .housing-header {
+    flex-direction: column;
+  }
+  .rating-host {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .rating-host .host {
+    order: 2;
+    flex: 1;
+  }
+  .rating-host .rating {
+    order: 1;
+    flex: 1;
+  }
   #title-logement {
     font-size: 18px;
   }
   .location {
     font-size: 14px;
-  }
-  .rating {
-    padding-top: 1em;
-    .host {
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-  .title-location {
-    text-align: left;
   }
 }

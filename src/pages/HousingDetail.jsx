@@ -24,21 +24,20 @@ function HousingDetail() {
   return (
     <div>
       <SlideShow pictures={logement.pictures} />
-      <section>
-        <div className="housing-header">
-          <div className="title-host">
-            <h1 id="title-logement">{logement.title}</h1>
-            <HostCard host={logement.host} />
-          </div>
-          <div className="location">
+      <div className="housing-header">
+        <div className="info-logement">
+          <h1 id="title-logement">{logement.title}</h1>
+          <p className="location">
             {city}, {region}
-          </div>
-        </div>
-        <div className="tags-rating">
+          </p>
           <TagList tags={logement.tags} />
+        </div>
+        <div className="rating-host">
+          <HostCard host={logement.host} />
           <RatingStars rating={logement.rating} />
         </div>
-      </section>
+      </div>
+
       <div id="collapseHousingDetail">
         <Collapse title="Description" variant="housing">
           {logement.description}
