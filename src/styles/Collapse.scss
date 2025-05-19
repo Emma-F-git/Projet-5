@@ -101,6 +101,9 @@
       font-size: 12px;
     }
   }
+  .collapse.housing .collapse-inner {
+    min-height: 0;
+  }
   #collapseHousingDetail {
     flex-direction: column;
     gap: 0;

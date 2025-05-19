@@ -49,6 +49,8 @@
 @media (max-width: 768px) {
   .housing-header {
     flex-direction: column;
+    margin-bottom: 0;
+    line-height: 143%;
   }
   .rating-host {
     align-items: center;
