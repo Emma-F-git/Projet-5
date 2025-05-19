@@ -1,5 +1,5 @@
 /*Font*/
-$font-stack: "Montserrat", system-ui, Avenir, Helvetica, Arial, sans-serif;
+$font-stack: "Montserrat", system-ui, sans-serif;
 $font-weight: 500;
 
 /*Colors*/
@@ -38,6 +38,16 @@ body {
   font-weight: $font-weight;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-stack;
+  font-weight: $font-weight;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -53,11 +63,6 @@ button {
   font-size: 1em;
   font-weight: $font-weight;
   color: white;
-  cursor: pointer;
-  &:focus,
-  &:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-  }
 }
 
 /*Mixin*/
