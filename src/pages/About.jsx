@@ -1,5 +1,4 @@
 import Collapse from "../components/ui/Collapse";
-import "../styles/Header.scss";
 import "../styles/Banner.scss";
 import Banner from "../components/ui/Banner";
 
