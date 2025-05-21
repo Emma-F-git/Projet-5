@@ -1,15 +1,27 @@
 @use "../index.scss" as *;
 
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-align: center;
+  width: 100%;
+}
+
 #notFound {
   font-size: 288px;
   color: $main-background-color;
   margin: 0;
+  max-width: 100%;
 }
 
 #notFoundMessage {
   font-size: 36px;
   color: $main-background-color;
   font-weight: normal;
+  max-width: 100%;
 }
 
 #linkNotFound {
@@ -17,9 +29,14 @@
   text-decoration: underline;
   display: inline-block;
   margin: 4rem 0;
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {
+  .not-found {
+    gap: 2rem;
+  }
+
   #notFound {
     font-size: 96px;
   }
