@@ -27,6 +27,12 @@ $button-bg-light: #f9f9f9;
   min-height: 100vh;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body {
   overflow-x: hidden;
